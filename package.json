@@ -1,0 +1,17 @@
+{
+  "name": "job-inter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "js-sleep": "nodemon js/sleep",
+    "ts-sleep": "tsnd --respawn ts/sleep"
+  },
+  "keywords": [],
+  "author": "Mario Lazzari",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "ts-node-dev": "^2.0.0"
+  }
+}
