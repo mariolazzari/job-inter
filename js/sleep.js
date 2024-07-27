@@ -1,11 +1,16 @@
+// function version
 function sleep(ms) {
   return new Promise(resolve => {
     setTimeout(resolve, ms);
   });
 }
-
 sleep(666).then(() => console.log("Sleep"));
 
-const sleep2 = ms => new Promise(resolve => setTimeout(resolve, ms));
+// arrow function versions
+const sleepAF = ms => new Promise(resolve => setTimeout(resolve, ms));
+sleepAF(777).then(() => console.log("Sleep arrow"));
 
-sleep(777).then(() => console.log("Arrow sleep"));
+function sleepCB(ms, cb) {
+  setTimeout(cb, ms);
+}
+sleepCB(888, () => console.log("Sleep callback"));
