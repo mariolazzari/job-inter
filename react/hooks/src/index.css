@@ -1,0 +1,17 @@
+.container {
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.section {
+  margin-bottom: 10px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+}
