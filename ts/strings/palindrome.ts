@@ -1,3 +1,5 @@
+import { reverseString } from "./reverse-string";
+
 function palindrome(str = ""): boolean {
   return str === str.split("").reverse().join("");
 }
@@ -14,3 +16,7 @@ let test = "mamma";
 check(test);
 test = "abba";
 check(test);
+
+// reuse reverse
+const palindromeReuse = (str: string): boolean => reverseString(str) === str;
+console.log(palindromeReuse(test));

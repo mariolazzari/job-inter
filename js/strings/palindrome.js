@@ -1,3 +1,5 @@
+const { reverseString } = require("./reverse-string");
+
 function palindrome(str = "") {
   return str === str.split("").reverse().join("");
 }
@@ -14,3 +16,8 @@ let test = "mamma";
 check(test);
 test = "abba";
 check(test);
+
+// reuse string
+const reverseReuse = str => reverseString(str) === str;
+console.log(reverseReuse("Mario"));
+console.log(reverseReuse("abba"));
