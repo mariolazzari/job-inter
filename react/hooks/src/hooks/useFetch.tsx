@@ -45,7 +45,5 @@ export function useFetch<T>({ url }: FetchProps) {
     };
   }, [url]);
 
-  console.log(data);
-
   return { data, isLoading, isSuccess, isError: !isSuccess, error, refetch };
 }
