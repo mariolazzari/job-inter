@@ -22,3 +22,10 @@
   gap: 10px;
   margin: 10px 0px;
 }
+
+.input-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
