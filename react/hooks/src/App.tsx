@@ -3,6 +3,7 @@ import { UseFetch } from "./components/UseFetch";
 import { UseStorage } from "./components/UseStorage";
 import { UseMutation } from "./components/UseMutation";
 import { UseId } from "./components/UseId";
+import { UseRef } from "./components/UseRef";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <UseStorage />
       <UseMutation />
       <UseId />
+      <UseRef />
     </div>
   );
 }
