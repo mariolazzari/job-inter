@@ -1,6 +1,7 @@
 import { UseState } from "./components/UseState";
 import { UseFetch } from "./components/UseFetch";
 import { UseStorage } from "./components/UseStorage";
+import { UseMutation } from "./components/UseMutation";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <UseState />
       <UseFetch />
       <UseStorage />
+      <UseMutation />
     </div>
   );
 }
