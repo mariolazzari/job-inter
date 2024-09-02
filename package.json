@@ -8,9 +8,7 @@
     "js-palindrome": "nodemon js/strings/palindrome",
     "ts-palindrome": "tsnd --respawn ts/strings/palindrome",
     "js-reverse": "nodemon js/strings/reverse-string",
-    "ts-reverse": "tsnd --respawn ts/strings/reverse-string",
-    "js-sleep": "nodemon js/promises/sleep",
-    "ts-sleep": "tsnd --respawn ts/promises/sleep"
+    "ts-reverse": "tsnd --respawn ts/strings/reverse-string"
   },
   "keywords": [],
   "author": "Mario Lazzari",
