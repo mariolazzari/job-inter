@@ -4,11 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "vitest",
-    "js-palindrome": "nodemon js/strings/palindrome",
-    "ts-palindrome": "tsnd --respawn ts/strings/palindrome",
-    "js-reverse": "nodemon js/strings/reverse-string",
-    "ts-reverse": "tsnd --respawn ts/strings/reverse-string"
+    "test": "vitest"
   },
   "keywords": [],
   "author": "Mario Lazzari",

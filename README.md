@@ -1,7 +1,5 @@
 # Job Interview Q&A
 
-## Javascript
-
 ## React
 
 ## Typescript
