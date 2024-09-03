@@ -5,17 +5,22 @@ import { Theme } from "../types/Theme";
 type ThemeContextState = {
   theme: Theme;
   setTheme: (theme: Theme) => void;
-  themes: string[];
+  themes: readonly string[];
 };
 
 const ThemeContext = createContext<ThemeContextState | null>(null);
 
 export const ThemeProvider = ({ children }: Children) => {
   const [theme, setTheme] = useState<Theme>("system");
+  const themes = ["system", "light", "dark"] as const;
 
   return (
     <ThemeContext.Provider
-      value={{ theme, setTheme, themes: ["system", "light", "dark"] }}
+      value={{
+        theme,
+        setTheme,
+        themes,
+      }}
     >
       {children}
     </ThemeContext.Provider>
