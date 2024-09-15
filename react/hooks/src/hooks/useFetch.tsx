@@ -10,7 +10,7 @@ export function useFetch<T>({ url }: FetchProps) {
   const [isSuccess, setSuccess] = useState(false);
   const [error, setError] = useState<string | undefined>(undefined);
 
-  const refetch = async () => {
+  const fetchData = async () => {
     try {
       setLoading(true);
       const res = await fetch(url);
@@ -37,7 +37,7 @@ export function useFetch<T>({ url }: FetchProps) {
   };
 
   useEffect(() => {
-    refetch();
+    fetchData();
 
     // cleanup
     return () => {
@@ -45,5 +45,12 @@ export function useFetch<T>({ url }: FetchProps) {
     };
   }, [url]);
 
-  return { data, isLoading, isSuccess, isError: !isSuccess, error, refetch };
+  return {
+    data,
+    isLoading,
+    isSuccess,
+    isError: !isSuccess,
+    error,
+    refetch: fetchData,
+  };
 }
