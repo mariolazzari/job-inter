@@ -1,6 +1,6 @@
 import { describe, test, expect } from "vitest";
-import { findDuplicates, findDuplicatesAF } from "../../ts/arrays/duplicates";
-import { User } from "../../types/User";
+import { findDuplicates, findDuplicatesAF } from "ts/arrays/duplicates";
+import { User } from "types/User";
 
 describe("Find duplicates in a collection", () => {
   const nums = [1, 2, 3, 3, 4, 5, 6, 1];

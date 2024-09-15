@@ -1,5 +1,5 @@
-export const max = (arr: number[]): number =>
+export const max = <T>(arr: T[]): T =>
   arr.reduce((acc, cur) => (cur > acc ? cur : acc));
 
-export const min = (arr: number[]): number =>
+export const min = <T>(arr: T[]): T =>
   arr.reduce((acc, cur) => (cur < acc ? cur : acc));

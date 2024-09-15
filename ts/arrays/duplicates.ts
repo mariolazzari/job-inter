@@ -1,10 +1,8 @@
 // generic function
-export function findDuplicates<T>(nums: T[]): T[] {
-  const duplicates: T[] = nums.filter((n, idx) => nums.indexOf(n) !== idx);
-
-  return duplicates;
+export function findDuplicates<T>(arr: T[]): T[] {
+  return arr.filter((el, idx) => arr.indexOf(el) !== idx);
 }
 
 // arrow function version
-export const findDuplicatesAF = <T>(nums: T[]): T[] =>
-  nums.filter((n, idx) => nums.indexOf(n) !== idx);
+export const findDuplicatesAF = <T>(arr: T[]): T[] =>
+  arr.filter((el, idx) => arr.indexOf(el) !== idx);
