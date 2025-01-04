@@ -5,6 +5,7 @@ import { UseMutation } from "./components/UseMutation";
 import { UseId } from "./components/UseId";
 import { UseRef } from "./components/UseRef";
 import { UseEffect } from "./components/UseEffect";
+import UseTransition from "./components/UseTransition";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <UseId />
       <UseRef />
       <UseEffect />
+      <UseTransition />
     </div>
   );
 }
